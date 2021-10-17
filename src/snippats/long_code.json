@@ -1,0 +1,61 @@
+{
+    "Class Componet": {
+        "prefix": "cc",
+        "body": [
+            "import React, { Component } from 'react'",
+            "import {View, } from 'react-native'",
+            "",
+            "class ${TM_FILENAME_BASE} extends Component {",
+            "    constructor(props) {",
+            "        super(props)",
+            "        this.state = {",
+            "        }",
+            "    }",
+            "",
+            "    render(){",
+            "        return(",
+            "            $0",
+            "        )",
+            "    }",
+            "}",
+            "",
+            "export default ${TM_FILENAME_BASE};"
+        ],
+        "description": "Class component"
+    },
+    "Function": {
+        "prefix": "fn",
+        "body": [
+            "$1 = ($2) => {",
+            "      $3",
+            "}",
+        ],
+        "description": "arrow function"
+    },
+    "Navigate to screen": {
+        "prefix": "ng",
+        "body": "this.props.navigation.navigate('$0')",
+        "description": "navigate to screen"
+    },
+    "Component did mount": {
+        "prefix": "cdm",
+        "body": [
+            "componentDidMount(){",
+            "    $0",
+            "}"
+        ],
+        "description": "componentDidMount()"
+    },
+    "Constructor": {
+        "prefix": "cons",
+        "body": [
+            "constructor(props) {",
+            "    super(props)",
+            "    this.state = {",
+            "        $0",
+            "    }",
+            "}"
+        ],
+        "description": "constructor with state"
+    }
+}
