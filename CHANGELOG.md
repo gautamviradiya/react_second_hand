@@ -4,7 +4,7 @@
 - Initial release of React native second hand VSCode Extension
 - Features:
   - Add screen option in explorer folders
-  - some help full snippets like
+  - some helpfull snippets like
     - Class component
     - Arrow function
     - Navigate to screen

@@ -12,7 +12,8 @@
 
 ## Features
 
-**Create Files or Folder** : Type ***`Screen Name`*** 
+ -Add react native screen using "Add screen" option in explorer window.
+ -Productive snippets.
 
 <!-- ## Extension Settings
 

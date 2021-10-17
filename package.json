@@ -9,6 +9,14 @@
 		"email": "gautamvirdiya1@gmail.com"
 	},
 	"icon": "./src/assets/image/icon.png",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/gautamviradiya/react_second_hand.git"
+	},
+	"bugs": {
+		"url": "https://github.com/gautamviradiya/react_second_hand/issues",
+		"email": "gautamviradiya1@gmail.com"
+	},
 	"keywords": [
 		"react native snippets",
 		"react native productivity",
