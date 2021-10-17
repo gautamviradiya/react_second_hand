@@ -8,6 +8,7 @@
 		"name": "Gautam virdiya",
 		"email": "gautamvirdiya1@gmail.com"
 	},
+	"icon": "./src/assets/image/icon.png",
 	"keywords": [
 		"react native snippets",
 		"react native productivity",
