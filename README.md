@@ -12,8 +12,8 @@
 
 ## Features
 
- -Add react native screen using "Add screen" option in explorer window.
- -Productive snippets.
+ * Add react native screen using "Add screen" option in explorer window.
+ * Productive snippets.
 
 <!-- ## Extension Settings
 
