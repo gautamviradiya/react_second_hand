@@ -17,7 +17,7 @@ export function activate(context: vscode.ExtensionContext) {
 	let disposable = vscode.commands.registerCommand('gautamv.addScreen', (file: vscode.Uri) => {
 		// The code you place here will be executed every time your command is executed
 		// Display a message box to the user
-		const projectRoot = vscode.workspace.workspaceFolders[0].uri.fsPath;
+		const projectRoot = vscode.workspace?.workspaceFolders![0].uri.fsPath;
 		let addScreen = new AddScreen();
 
 		addScreen.addScreen(file ? file.fsPath : projectRoot)

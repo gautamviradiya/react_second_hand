@@ -4,7 +4,7 @@ import * as vscode from 'vscode'
 class AddScreen {
 
     addScreen(contextPath: string) {
-        const projectRoot = vscode.workspace.workspaceFolders[0].uri.fsPath;
+        const projectRoot = vscode.workspace.workspaceFolders![0].uri.fsPath;
 
         vscode.window.showInputBox({
             prompt: 'Add screen to /src/screens/',
@@ -20,7 +20,9 @@ class AddScreen {
                     this.#showMessage("Screen already available"); return;
                 }
 
-                fs.mkdir(contextPath + '/' + input, { recursive: false }, err => this.#showMessage(err))
+                fs.mkdir(contextPath + '/' + input, { recursive: false }, () => {
+                    console.log("screen directory reated");
+                })
 
                 const fileBasePath = contextPath + '/' + input + "/" + input
 
@@ -44,7 +46,7 @@ class ${input}Screen extends Component {
                     
 export default ${input}Screen;`,
                     { flag: 'a+' },
-                    err => this.#showMessage(err?.message)
+                    err => this.#showMessage(err!.message)
                 )
 
                 //Styles File
@@ -60,7 +62,7 @@ const ${input}Styles = StyleSheet.create({
                     
 export default ${input}Styles`,
                     { flag: 'a+' },
-                    err => this.#showMessage(err?.message)
+                    err => this.#showMessage(err!.message)
                 )
 
                 setTimeout(() => {
@@ -76,12 +78,12 @@ export default ${input}Styles`,
 
             }
             catch (err) {
-                this.#showMessage(err)
+                this.#showMessage("Try again")
             }
 
         })
     }
-    #showMessage(msg: String) {
+    #showMessage(msg: string) {
         vscode.window.showInformationMessage(msg)
     }
 

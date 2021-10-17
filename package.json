@@ -8,10 +8,10 @@
 		"name": "Gautam virdiya",
 		"email": "gautamvirdiya1@gmail.com"
 	},
-	"icon": "./src/assets/image/icon.png",
+	"icon": "icon.png",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/gautamviradiya/react_second_hand.git"
+		"url": "https://github.com/gautamviradiya/react_second_hand"
 	},
 	"bugs": {
 		"url": "https://github.com/gautamviradiya/react_second_hand/issues",
